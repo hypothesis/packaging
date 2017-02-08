@@ -10,5 +10,5 @@ setgid carbon-c-relay
 
 script
   . /etc/default/carbon-c-relay
-  /usr/bin/carbon-c-relay $DAEMON_ARGS
+  exec /usr/bin/carbon-c-relay $DAEMON_ARGS
 end script
