@@ -8,6 +8,9 @@ limit nofile 32768 32768
 setuid carbon-c-relay
 setgid carbon-c-relay
 
+respawn
+respawn limit 10 5
+
 script
   . /etc/default/carbon-c-relay
   exec /usr/bin/carbon-c-relay $DAEMON_ARGS
