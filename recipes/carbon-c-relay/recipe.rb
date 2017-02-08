@@ -3,9 +3,10 @@ class CarbonCRelay < FPM::Cookery::Recipe
   homepage    'https://github.com/grobian/carbon-c-relay'
   maintainer  'Nick Stenning <nick@whiteink.com>'
 
-  name    'carbon-c-relay'
-  version '2.6'
-  license 'Apache-2.0'
+  name     'carbon-c-relay'
+  version  '2.6'
+  revision '1'
+  license  'Apache-2.0'
 
   source "https://github.com/grobian/carbon-c-relay/archive/v#{version}.tar.gz"
   sha256 '580ec4629ab63288ba73259a8b98300d649e253ac940c0343e009ed5c454053f'
